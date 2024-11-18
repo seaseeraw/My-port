@@ -1,28 +1,16 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function Abouts() {
-  const [show, setShow] = useState(false);
+  const notify = () => toast("Wow so easy !");
 
   return (
-    <Row>
-      <Col xs={6}>
-        <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
-          <Toast.Header>
-            
-            <strong className="me-auto">Shishir Pathak</strong>
-            <small>Full Stack Develpoer</small>
-          </Toast.Header>
-          <Toast.Body>I am a passionate developer in MERN Stack.</Toast.Body>
-        </Toast>
-      </Col>
-      <Col xs={6}>
-        <Button onClick={() => setShow(true)}>About Me</Button>
-      </Col>
-    </Row>
+    <div>
+        <button onClick={notify}>Notify !</button>
+        <ToastContainer />
+      </div>
   );
 }
 
