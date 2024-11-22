@@ -1,17 +1,17 @@
-import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+// import React from 'react';
+// import { ToastContainer, toast } from 'react-toastify';
 
-import 'react-toastify/dist/ReactToastify.css';
+// import 'react-toastify/dist/ReactToastify.css';
 
-function Abouts() {
-  const notify = () => toast("Wow so easy !");
+// function Abouts() {
+//   const notify = () => toast("Wow so easy !");
 
-  return (
-    <div>
-        <button onClick={notify}>Notify !</button>
-        <ToastContainer />
-      </div>
-  );
-}
+//   return (
+//     <div>
+//         <button onClick={notify}>Notify !</button>
+//         <ToastContainer />
+//       </div>
+//   );
+// }
 
-export default Abouts;
+// export default Abouts;

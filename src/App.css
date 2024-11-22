@@ -1,5 +1,16 @@
 .footer{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 20vh;
+}
+li{
+    list-style: none;
+}
+.shi{
+    background-color: black;
+    color: whitesmoke;
+    align-content: center;
+    text-align: center;
 }
